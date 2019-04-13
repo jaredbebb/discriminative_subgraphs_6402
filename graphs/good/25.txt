@@ -1,0 +1,9 @@
+a	gentleman
+a	roguish
+gentleman	a
+gentleman	roguish
+good	great
+good	well
+hello	goodbye
+roguish	a
+roguish	gentleman
