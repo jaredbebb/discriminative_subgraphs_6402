@@ -124,7 +124,9 @@ def make_discriminative_graph(good_dir, bad_dir):
     print('\nHere is resulting discriminative graph:')
     return dgraph
 
+
 if __name__ == "__main__":
-    print(make_discriminative_graph('D:/Documents/Pycharm_Projects/discriminative_subgraph/graphs/good', 'D:/Documents/Pycharm_Projects/discriminative_subgraph/graphs/bad').edges())
-    print(make_discriminative_graph('D:/Downloads/graphs/good', 'D:/Downloads/graphs/bad').edges())
+    #print(make_discriminative_graph('c:/DiscMining/good', 'c:/DiscMining/bad').edges())
+    print(make_discriminative_graph('D:/Documents/Pycharm_Projects/discriminative_subgraphs_6402/data/formula_one/good', 'D:/Documents/Pycharm_Projects/discriminative_subgraphs_6402/data/formula_one/bad').edges())
+    #print(make_discriminative_graph('D:/Downloads/graphs/good', 'D:/Downloads/graphs/bad').edges())
     #print(make_discriminative_graph(sys.argv[1], sys.argv[2]).edges())

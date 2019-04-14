@@ -20,30 +20,31 @@ def sort_df():
     global df
     df = df.sort_values(by=['position','raceId','lap'], ascending= [True, True, False])
 
-def draw_edge(edgea,edgeb):
-    print(str(edgea) +"\t" + str(edgeb))
-
-def iter_edges(df):
+def iter_edges(df,file):
     for index in range(0,len(df)-1):
         a = df.iloc[index]
         b = df.iloc[index+1]
-        draw_edge(edgea =a['position'],edgeb=b['position'])
+        print(str(a['position']) + "\t" + str(b['position']))
+        e = str(a['position']) + "\t" + str(b['position'])
+        file.write(e + "\n")
 
-def filter_winners():
+def filter_winners(dir):
     global df
+    num = 1
     for race in unique_races():
         race_results = df[df['raceId']== race]
         winner_row = race_results.nlargest(1, 'lap')
         winning_driverId = winner_row['driverId'].values[0]
         drivers_laps =race_results[race_results['driverId']== winning_driverId].sort_values(by=['lap'], ascending= [True])
         print(drivers_laps)
-        #positions = drivers_laps['position']
-        iter_edges(drivers_laps)
-        #return drivers_laps
+        file = open(dir + str(num) + ".txt", "w")
+        iter_edges(drivers_laps,file)
+        num += 1
 
 
-def filter_losers(): #drivers who drop out of race not shown in last lap. Hence they will not be considered a 'loser'
+def filter_losers(dir): #drivers who drop out of race not shown in last lap. Hence they will not be considered a 'loser'
     global df
+    num = 1
     for race in unique_races():
         race_results = df[df['raceId']== race]
         print(race_results)
@@ -55,10 +56,14 @@ def filter_losers(): #drivers who drop out of race not shown in last lap. Hence 
         print(loser_driverId)
         drivers_laps =race_results[race_results['driverId']== loser_driverId].sort_values(by=['lap'], ascending= [True])
         print(drivers_laps)
-        iter_edges(drivers_laps)
+        file = open(dir + str(num) + ".txt", "w")
+        iter_edges(drivers_laps,file)
+        num += 1
 
 if __name__ == "__main__":
+    good_edges_path = "../data/formula_one/good/"
+    bad_edges_path = "../data/formula_one/bad/"
     read_file("../data/formula_one/lapTimes.csv")
     sort_df()
-    #filter_winners()
-    filter_losers()
+    filter_winners(dir = good_edges_path)
+    #filter_losers(dir = bad_edges_path)
