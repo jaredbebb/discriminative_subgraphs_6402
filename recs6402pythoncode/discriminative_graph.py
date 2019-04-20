@@ -105,7 +105,7 @@ def make_discriminative_graph(good_dir, bad_dir):
     if len(dgraph.nodes()) == 0:
         print('\nHaving to relax constraints to try to find')
         print('discriminative graph in bad graphs...')
-        thresholdGoods = (len(good_graphs) + 1) // 2
+        thresholdGoods = (len(good_graphs) + 1) // 4
         print('Threshold = ', thresholdGoods)
         dgraph = relaxed_create_discriminative_graph(bad_graphs, good_graphs, thresholdGoods)
 
@@ -117,7 +117,7 @@ def make_discriminative_graph(good_dir, bad_dir):
     if len(dgraph.nodes()) == 0:
         print('\nHaving to relax constraints to try to find')
         print('discriminative graph in good graphs...')
-        thresholdBads = (len(bad_graphs) + 1) // 2
+        thresholdBads = (len(bad_graphs) + 1) // 4
         print('Threshold = ', thresholdBads)
         dgraph = relaxed_create_discriminative_graph(good_graphs, bad_graphs, thresholdBads)
 

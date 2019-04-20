@@ -1,4 +1,3 @@
-
 import pandas as pd
 import numpy as np
 df = pd.DataFrame({})
@@ -18,15 +17,46 @@ def sort_df():
     global df
     df = df.sort_values(by=['position','raceId','lap'], ascending= [True, True, False])
 
-def iter_edges(df,file):
+def iter_edges(df,file_name):
+    file = open(file_name, "w")
+    flag = False
     for index in range(0,len(df)-1):
         a = df.iloc[index]
         b = df.iloc[index+1]
-        print(str(a['position']) + "\t" + str(b['position']))
-        e = str(a['position']) + "\t" + str(b['position'])
-        file.write(e + "\n")
-    #e = str(1) + "\t" + str(1)
-    #file.write(e + "\n")
+        edge = str(a['position']) + "\t" + str(b['position'])
+        if(not flag and edge == "1	1"):
+            flag = True
+        file.write(edge + "\n")
+    if not flag:
+        print("edge doesn't match:" + str(file_name))
+    for index in range(0, len(df) - 2):
+        a = df.iloc[index]
+        b = df.iloc[index+1]
+        c = df.iloc[index+2]
+        edge = str(a['position']) + "\t" + str(b['position'])+"->"+ str(c['position'])
+        #print(edge)
+        # if(not flag and edge == "1	1->1"):
+        #     print("edge matches:"+str(file))
+        #     flag = True
+        file.write(edge + "\n")
+    for index in range(0, len(df) - 3):
+        a = df.iloc[index]
+        b = df.iloc[index+1]
+        c = df.iloc[index+2]
+        d = df.iloc[index+3]
+        edge = str(a['position']) + "\t" + str(b['position'])+"->"+ str(c['position'])+"->"+ str(d['position'])
+        #print(edge)
+        file.write(edge + "\n")
+
+    for index in range(0, len(df) - 4):
+        a = df.iloc[index]
+        b = df.iloc[index+1]
+        c = df.iloc[index+2]
+        d = df.iloc[index+3]
+        e = df.iloc[index + 4]
+        edge = str(a['position']) + "\t" + str(b['position'])+"->"+ str(c['position'])+"->"+ str(d['position'])+"->"+ str(e['position'])
+        #print(edge)
+        file.write(edge + "\n")
 
 def filter_winners(dir):
     global df
@@ -36,10 +66,11 @@ def filter_winners(dir):
         winner_row = race_results.nlargest(1, 'lap')
         winning_driverId = winner_row['driverId'].values[0]
         drivers_laps =race_results[race_results['driverId']== winning_driverId].sort_values(by=['lap'], ascending= [True])
-        print(drivers_laps)
-        if num >= 21 and num <= 30:
-            file = open(dir + str(num) + ".txt", "w")
-            iter_edges(drivers_laps, file)
+        #print(drivers_laps)
+        if num >= 1 and num <= 3333:
+            #file = open(dir + str(num) + ".txt", "w")
+            file = dir + str(num) + ".txt"
+            iter_edges(drivers_laps, file_name = file)
         num += 1
 
 
@@ -52,9 +83,9 @@ def filter_losers(dir): #drivers who drop out of race not shown in last lap. Hen
         loser_row = sorted_race_results.nlargest(1, 'lap')
         loser_driverId = loser_row['driverId'].values[0]
         drivers_laps =race_results[race_results['driverId']== loser_driverId].sort_values(by=['lap'], ascending= [True])
-        if num >= 21 and num <= 30:
-            file = open(dir + str(num) + ".txt", "w")
-            iter_edges(drivers_laps, file)
+        if num >= 1 and num <= 3333:
+            file = dir + str(num) + ".txt"
+            iter_edges(drivers_laps, file_name = file)
         num += 1
 
 if __name__ == "__main__":
@@ -62,5 +93,7 @@ if __name__ == "__main__":
     bad_edges_path = "../data/formula_one/bad/"
     read_file("../data/formula_one/lapTimes.csv")
     sort_df()
+    print("now time for good graphs")
     filter_winners(dir = good_edges_path)
+    print("now time for bad graphs")
     filter_losers(dir = bad_edges_path)
