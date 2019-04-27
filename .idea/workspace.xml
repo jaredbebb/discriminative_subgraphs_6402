@@ -10,28 +10,27 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/discriminative_subgraphs_6402$discriminative_graph.coverage" NAME="discriminative_graph Coverage Results" MODIFIED="1555719366741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recs6402pythoncode" />
-    <SUITE FILE_PATH="coverage/discriminative_subgraphs_6402$nodes_edges_laps.coverage" NAME="nodes_edges_laps Coverage Results" MODIFIED="1555719890386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/laps_to_graph" />
+    <SUITE FILE_PATH="coverage/discriminative_subgraphs_6402$edge_freq.coverage" NAME="edge_freq Coverage Results" MODIFIED="1556386826770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/laps_to_graph" />
+    <SUITE FILE_PATH="coverage/discriminative_subgraphs_6402$discriminative_graph.coverage" NAME="discriminative_graph Coverage Results" MODIFIED="1556388951009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recs6402pythoncode" />
+    <SUITE FILE_PATH="coverage/discriminative_subgraphs_6402$nodes_edges_laps__1_.coverage" NAME="nodes_edges_laps (1) Coverage Results" MODIFIED="1556387698417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/discriminative_subgraphs_6402$nodes_edges_laps.coverage" NAME="nodes_edges_laps Coverage Results" MODIFIED="1556388902757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="nodes_edges_laps.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/laps_to_graph/nodes_edges_laps.py">
+      <file leaf-file-name="edge_freq.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/edge_freq.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="719">
-              <caret line="60" column="22" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="22" />
-              <folding>
-                <element signature="e#1#20#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="665">
+              <caret line="60" column="26" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="discriminative_graph.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="discriminative_graph.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/recs6402pythoncode/discriminative_graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="119" column="50" selection-start-line="119" selection-start-column="50" selection-end-line="119" selection-end-column="50" />
+            <state relative-caret-position="-583">
+              <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -39,7 +38,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="nodes_edges_laps.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nodes_edges_laps.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="702">
+              <caret line="63" column="14" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -48,6 +66,7 @@
       <find>comparing a</find>
       <find>edge</find>
       <find>print</find>
+      <find>dir</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -57,7 +76,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/recs6402pythoncode/discriminative_graph.py" />
+        <option value="$PROJECT_DIR$/laps_to_graph/edge_freq.py" />
         <option value="$PROJECT_DIR$/laps_to_graph/nodes_edges_laps.py" />
+        <option value="$PROJECT_DIR$/nodes_edges_laps.py" />
       </list>
     </option>
   </component>
@@ -71,10 +92,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-137" />
-    <option name="y" value="-9" />
+    <option name="x" value="1912" />
+    <option name="y" value="-443" />
     <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -87,11 +108,6 @@
             <path>
               <item name="discriminative_subgraphs_6402" type="b2602c69:ProjectViewProjectNode" />
               <item name="discriminative_subgraphs_6402" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="discriminative_subgraphs_6402" type="b2602c69:ProjectViewProjectNode" />
-              <item name="discriminative_subgraphs_6402" type="462c0819:PsiDirectoryNode" />
-              <item name="laps_to_graph" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="discriminative_subgraphs_6402" type="b2602c69:ProjectViewProjectNode" />
@@ -127,6 +143,11 @@
       </console-settings>
     </option>
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Documents\Pycharm_Projects\discriminative_subgraphs_6402" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -139,7 +160,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.nodes_edges_laps">
+  <component name="RunManager" selected="Python.discriminative_graph">
     <configuration name="discriminative_graph" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="discriminative_subgraphs_6402" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -167,12 +188,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/laps_to_graph" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/laps_to_graph/nodes_edges_laps.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nodes_edges_laps.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -184,8 +205,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.nodes_edges_laps" />
         <item itemvalue="Python.discriminative_graph" />
+        <item itemvalue="Python.nodes_edges_laps" />
       </list>
     </recent_temporary>
   </component>
@@ -203,22 +224,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-443" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20802534" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4366768" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11927083" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.27447918" />
+      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.36510417" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2122492" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.45406547" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -238,20 +260,85 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/laps_to_graph/nodes_edges_laps.py</url>
-          <line>68</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/recs6402pythoncode/discriminative_graph.py</url>
           <line>116</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/nodes_edges_laps.py</url>
+          <line>45</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="23" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/edge_freq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodes_edges_laps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edge_freq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodes_edges_laps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodes_edges_laps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="60" column="22" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recs6402pythoncode/discriminative_graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1887">
+          <caret line="119" column="50" selection-start-line="119" selection-start-column="50" selection-end-line="119" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodes_edges_laps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="60" column="22" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recs6402pythoncode/discriminative_graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1887">
+          <caret line="119" column="50" selection-start-line="119" selection-start-column="50" selection-end-line="119" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/recs6402pythoncode/discriminative_graph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -262,13 +349,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/laps_to_graph/nodes_edges_laps.py">
+    <entry file="file://$PROJECT_DIR$/nodes_edges_laps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
-          <folding>
-            <element signature="e#1#20#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -286,13 +370,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Python36_64/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="323" selection-start-line="323" selection-end-line="323" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/recs6402pythoncode/discriminative_graph_leopold.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -300,22 +377,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/recs6402pythoncode/discriminative_graph.py">
+    <entry file="file://D:/Python36_64/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="119" column="50" selection-start-line="119" selection-start-column="50" selection-end-line="119" selection-end-column="50" />
+        <state relative-caret-position="155">
+          <caret line="319" selection-start-line="319" selection-end-line="319" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodes_edges_laps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="63" column="14" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="14" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/laps_to_graph/nodes_edges_laps.py">
+    <entry file="file://$PROJECT_DIR$/edge_freq.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="60" column="22" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="22" />
+        <state relative-caret-position="665">
+          <caret line="60" column="26" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recs6402pythoncode/discriminative_graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-583">
+          <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
           <folding>
-            <element signature="e#1#20#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
