@@ -105,7 +105,7 @@ def make_discriminative_graph(good_dir, bad_dir):
     if len(dgraph.nodes()) == 0:
         print('\nHaving to relax constraints to try to find')
         print('discriminative graph in bad graphs...')
-        thresholdGoods = (len(good_graphs) + 1) // 4
+        thresholdGoods = (len(good_graphs) + 1) // 2
         print('Threshold = ', thresholdGoods)
         dgraph = relaxed_create_discriminative_graph(bad_graphs, good_graphs, thresholdGoods)
 
@@ -117,7 +117,7 @@ def make_discriminative_graph(good_dir, bad_dir):
     if len(dgraph.nodes()) == 0:
         print('\nHaving to relax constraints to try to find')
         print('discriminative graph in good graphs...')
-        thresholdBads = (len(bad_graphs) + 1) // 4
+        thresholdBads = (len(bad_graphs) + 1) // 2
         print('Threshold = ', thresholdBads)
         dgraph = relaxed_create_discriminative_graph(good_graphs, bad_graphs, thresholdBads)
 
@@ -126,7 +126,9 @@ def make_discriminative_graph(good_dir, bad_dir):
 
 
 if __name__ == "__main__":
-    #print(make_discriminative_graph('c:/DiscMining/good', 'c:/DiscMining/bad').edges())
-    print(make_discriminative_graph('D:/Documents/Pycharm_Projects/discriminative_subgraphs_6402/data/formula_one/good', 'D:/Documents/Pycharm_Projects/discriminative_subgraphs_6402/data/formula_one/bad').edges())
-    #print(make_discriminative_graph('D:/Downloads/graphs/good', 'D:/Downloads/graphs/bad').edges())
-    #print(make_discriminative_graph(sys.argv[1], sys.argv[2]).edges())
+    good_graphs = 'D:/Documents/Pycharm_Projects/discriminative_subgraphs_6402/data/formula_one/good'
+    bad_graphs = 'D:/Documents/Pycharm_Projects/discriminative_subgraphs_6402/data/formula_one/bad'
+
+    print(make_discriminative_graph(good_graphs,bad_graphs).edges())
+    f = open('dg_output', 'w')
+    print(make_discriminative_graph(good_graphs, bad_graphs).edges(),file=f)
